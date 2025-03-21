@@ -239,5 +239,37 @@ button{
     justify-self: center;
 }
 
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #cc584bd0, #d66558d0, #c75f54d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+p {
+    font-size: 1.5em;
+    color: #6d6b6b;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #e4e2e2, #ebe8e8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.non-draggable{
+
+        user-select: none; /* Prevent text/image selection */
+        pointer-events: none; /* Disable mouse events */
+        -webkit-user-drag: none; /* Disable dragging (for older WebKit browsers) */
+
+    
+}
+
 
 
