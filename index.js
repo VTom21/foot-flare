@@ -66,6 +66,21 @@ function toggleDropdown() {
     dropdown.classList.toggle("show");
 }
 
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    // Adding the 'loader-hidden' class to fade the loader out
+    loader.classList.add("loader-hidden");
+
+    // Once the transition ends, remove the loader from the DOM
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader); // Correctly passing the element reference
+    });
+
+    // Set default flag when the page loads
+    updateFlag("English");
+});
+
 // Function to select a language
 function selectLanguage(element) {
     if (!element) return;
@@ -105,15 +120,15 @@ function updateFlag(language) {
 
 // Function to load language file and update text
 function changeLanguage(lang) {
-    fetch(`/Supported Languages/${lang}.json`)
+    fetch(`/Supported Languages/languages.json`)
         .then(response => {
-            if (!response.ok) throw new Error(`Language file not found: ${lang}.json`);
+            if (!response.ok) throw new Error(`Language file not found`);
             return response.json();
         })
         .then(data => {
             Object.keys(data).forEach(key => {
                 document.querySelectorAll(`.${key}`).forEach(el => {
-                    el.innerText = data[key];
+                    el.innerText = data[key][lang] || data[key]["en"]; // Default to English if the key is missing
                 });
             });
         })
@@ -132,21 +147,7 @@ document.addEventListener("click", function (event) {
     }
 });
 
-// Set default flag when the page loads
-updateFlag("English");
 
-
-window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-
-    // Adding the 'loader-hidden' class to fade the loader out
-    loader.classList.add("loader-hidden");
-
-    // Once the transition ends, remove the loader from the DOM
-    loader.addEventListener("transitionend", () => {
-        document.body.removeChild(loader); // Correctly passing the element reference
-    });
-});
 
 
 

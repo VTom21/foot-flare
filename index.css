@@ -228,6 +228,10 @@ button {
     line-height: 1.2;
 }
 
+.text1{
+    text-align: center;
+}
+
 .hero-text p {
     font-size: 15px;
     color: #555;

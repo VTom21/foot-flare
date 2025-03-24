@@ -1,0 +1,18 @@
+{
+    "home": { "en": "Home", "de": "Startseite", "ar": "الرئيسية" },
+    "about": { "en": "About", "de": "Über uns", "ar": "من نحن" },
+    "men": { "en": "Men", "de": "Männer", "ar": "الرجال" },
+    "women": { "en": "Women", "de": "Frauen", "ar": "النساء" },
+    "kids": { "en": "Kids", "de": "Kinder", "ar": "الأطفال" },
+    "contact": { "en": "Contact", "de": "Kontakt", "ar": "اتصل بنا" },    
+    "sneakers": { "en": "Sneakers", "de": "Sneaker", "ar": "أحذية رياضية" },
+    "boots": { "en": "Boots", "de": "Stiefel", "ar": "أحذية طويلة" },
+    "text1": { "en": "Step Up Your Style with Foot Flare", "de": "Bringen Sie Stil in Ihr Leben mit Foot Flare", "ar": "ارفع مستوى أناقتك مع فوت فلير" },
+    "text2": {
+      "en": "Discover footwear that’s built for your comfort. Whether you're running errands or running a marathon, we’ve got the perfect pair for you.",
+      "de": "Entdecken Sie Schuhe, die für Ihren Komfort gemacht sind. Egal, ob Sie Besorgungen machen oder einen Marathon laufen, wir haben das perfekte Paar für Sie.",
+      "ar": "اكتشف الأحذية المصممة لراحتك. سواء كنت تقوم بمهمات يومية أو تجري ماراثونًا، لدينا الزوج المثالي لك."
+    },    
+    "btn2": { "en": "Shop Now", "de": "Jetzt einkaufen", "ar": "تسوق الآن" }
+  }
+  
