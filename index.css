@@ -230,6 +230,8 @@ button {
 
 .text1{
     text-align: center;
+    display: grid;
+    justify-content: center;
 }
 
 .hero-text p {
