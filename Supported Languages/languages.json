@@ -7,7 +7,8 @@
       "fr": "Accueil", 
       "it": "Home",
       "ru": "Главная",
-      "jp": "ホーム"
+      "jp": "ホーム",
+      "pl": "Strona główna"
   },
   "about": { 
       "en": "About", 
@@ -17,7 +18,8 @@
       "fr": "À propos", 
       "it": "Chi siamo",
       "ru": "О нас",
-      "jp": "会社概要"
+      "jp": "会社概要",
+      "pl": "O nas"
   },
   "men": { 
       "en": "Men", 
@@ -27,7 +29,8 @@
       "fr": "Hommes", 
       "it": "Uomini",
       "ru": "Мужчины",
-      "jp": "メンズ"
+      "jp": "メンズ",
+      "pl": "Mężczyźni"
   },
   "women": { 
       "en": "Women", 
@@ -37,7 +40,8 @@
       "fr": "Femmes", 
       "it": "Donne",
       "ru": "Женщины",
-      "jp": "ウィメンズ"
+      "jp": "ウィメンズ",
+      "pl": "Kobiety"
   },
   "kids": { 
       "en": "Kids", 
@@ -47,7 +51,8 @@
       "fr": "Enfants", 
       "it": "Bambini",
       "ru": "Дети",
-      "jp": "キッズ"
+      "jp": "キッズ",
+      "pl": "Dzieci"
   },
   "contact": { 
       "en": "Contact", 
@@ -57,7 +62,8 @@
       "fr": "Contact", 
       "it": "Contatti",
       "ru": "Контакты",
-      "jp": "お問い合わせ"
+      "jp": "お問い合わせ",
+      "pl": "Kontakt"
   },
   "sneakers": { 
       "en": "Sneakers", 
@@ -67,7 +73,8 @@
       "fr": "Baskets", 
       "it": "Scarpe da ginnastica",
       "ru": "Кроссовки",
-      "jp": "スニーカー"
+      "jp": "スニーカー",
+      "pl": "Sneakersy"
   },
   "loafer": { 
       "en": "Loafer", 
@@ -77,7 +84,8 @@
       "fr": "Mocassin", 
       "it": "Mocassino",
       "ru": "Лоферы",
-      "jp": "ローファー"
+      "jp": "ローファー",
+      "pl": "Loafer"
   },
   "sandals": { 
       "en": "Sandals", 
@@ -87,7 +95,8 @@
       "fr": "Sandales", 
       "it": "Sandali",
       "ru": "Сандалии",
-      "jp": "サンダル"
+      "jp": "サンダル",
+      "pl": "Sandały"
   },
   "heels": { 
       "en": "Heels", 
@@ -97,7 +106,8 @@
       "fr": "Talons", 
       "it": "Tacchi",
       "ru": "Туфли на каблуке",
-      "jp": "ヒール"
+      "jp": "ヒール",
+      "pl": "Obcasy"
   },
   "platform_shoes": { 
       "en": "Platform Shoes", 
@@ -107,7 +117,8 @@
       "fr": "Chaussures à plateforme", 
       "it": "Scarpe con piattaforma",
       "ru": "Обувь на платформе",
-      "jp": "プラットフォームシューズ"
+      "jp": "プラットフォームシューズ",
+      "pl": "Buty na platformie"
   },
   "boots": { 
       "en": "Boots", 
@@ -117,7 +128,8 @@
       "fr": "Bottes", 
       "it": "Stivali",
       "ru": "Сапоги",
-      "jp": "ブーツ"
+      "jp": "ブーツ",
+      "pl": "Kalosze"
   },
   "text1": { 
       "en": "Step Up Your Style with Foot Flare", 
@@ -127,7 +139,8 @@
       "fr": "Élevez votre style avec Foot Flare", 
       "it": "Aumenta il tuo stile con Foot Flare",
       "ru": "Поднимите свой стиль с Foot Flare",
-      "jp": "Foot Flareでスタイルをアップグレード"
+      "jp": "Foot Flareでスタイルをアップグレード",
+      "pl": "Podnieś swój styl z Foot Flare"
   },
   "text2": {
       "en": "Discover footwear that’s built for your comfort. Whether you're running errands or running a marathon, we’ve got the perfect pair for you.",
@@ -137,7 +150,8 @@
       "fr": "Découvrez des chaussures conçues pour votre confort. Que vous fassiez des courses ou que vous couriez un marathon, nous avons la paire parfaite pour vous.",
       "it": "Scopri calzature progettate per il tuo comfort. Che tu stia facendo commissioni o correndo una maratona, abbiamo il paio perfetto per te.",
       "ru": "Откройте для себя обувь, созданную для вашего комфорта. Независимо от того, выполняете ли вы повседневные дела или бегаете марафон, у нас есть идеальная пара для вас.",
-      "jp": "あなたの快適さのために作られたフットウェアを見つけてください。買い物やマラソンを走っている時、私たちはあなたにぴったりの一足を提供します。"
+      "jp": "あなたの快適さのために作られたフットウェアを見つけてください。買い物やマラソンを走っている時、私たちはあなたにぴったりの一足を提供します。",
+      "pl": "Odkryj obuwie stworzone z myślą o twoim komforcie. Niezależnie od tego, czy robisz zakupy, czy bierzesz udział w maratonie, mamy idealną parę dla ciebie."
   },
   "btn2": { 
       "en": "Shop Now", 
@@ -147,6 +161,7 @@
       "fr": "Acheter maintenant", 
       "it": "Compra ora",
       "ru": "Купить сейчас",
-      "jp": "今すぐ購入"
+      "jp": "今すぐ購入",
+      "pl": "Kup teraz"
   }
 }

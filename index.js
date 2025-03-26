@@ -111,7 +111,8 @@ function updateFlag(language) {
         "Russian": "RU",
         "Arabic": "SA",
         "Italian": "IT",
-        "Japanese": "JP"
+        "Japanese": "JP",
+        "Polish": "PL"
     };
 
     if (flagIcon) {
