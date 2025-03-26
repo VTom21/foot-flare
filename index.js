@@ -20,8 +20,7 @@ app.controller("indexController", function ($scope) {
             document.querySelectorAll("li a").forEach(link => {
                 link.classList.add("links");
             });
-
-
+            document.querySelector(".hero-section").classList.add("hero-dark");
         }
         else {
             document.body.classList.remove("body-dark");
@@ -37,6 +36,7 @@ app.controller("indexController", function ($scope) {
             document.querySelectorAll("a").forEach(link => {
                 link.classList.remove("links");
             });
+            document.querySelector(".hero-section").classList.remove("hero-dark");
         }
     };
 
@@ -112,17 +112,19 @@ function updateFlag(language) {
         "Arabic": "SA",
         "Italian": "IT",
         "Japanese": "JP",
-        "Polish": "PL"
+        "Polish": "PL",
+        "Portuguese": "PT",
+        "Chinese": "CN"
     };
 
     if (flagIcon) {
-        flagIcon.src = `https://flagsapi.com/${flags[language] || "US"}/flat/64.png`;
+        flagIcon.src = `https://flagsapi.com/${flags[language] || "US"}/shiny/64.png`;
     }
 }
 
 // Function to load language file and update text
 function changeLanguage(lang) {
-    fetch(`/Supported Languages/languages.json`)
+    fetch(`/Supported Languages/index.json`)
         .then(response => {
             if (!response.ok) throw new Error(`Language file not found`);
             return response.json();
