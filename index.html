@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="index">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/logos/favicon-Photoroom.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <title>Foot Flare</title>
+</head>
+
+<body ng-controller="indexController">
+
+
+    <div class="loader">
+        <img src="logos/favicon-Photoroom.png" alt="" id="preloader_img">
+    </div>
+    <nav>
+        <img ng-src="{{ logo_src }}" alt="Logo" id="brand_logo" class="img" draggable="false">
+
+        <ul>
+            <li><a href="#"><span class="home">Home</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </a></li>
+            <hr>
+            <li><a href="#" class="about">About</a></li>
+
+            <li class="dropdown">
+                <a href="#"class="men">Men</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"class="sneakers">Sneakers</a></li>
+                    <li><a href="#"class="boots">Boots</a></li>
+                    <li><a href="#"class="loafer">Loafer</a></li>
+                    <li><a href="#"class="sandals">Sandals</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#"class="women">Women</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"class="sneakers">Sneakers</a></li>
+                    <li><a href="#"class="boots">Boots</a></li>
+                    <li><a href="#"class="loafer">Loafer</a></li>
+                    <li><a href="#"class="sandals">Sandals</a></li>
+                    <li><a href="#"class="heels">Heels</a></li>
+                    <li><a href="#"class="platform_shoes">Platform Shoes</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#"class="kids">Kids</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"class="sneakers">Sneakers</a></li>
+                    <li><a href="#"class="boots">Boots</a></li>
+                    <li><a href="#"class="sandals">Sandals</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#"><span class="contact">Contact</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                    </svg></a></li>
+        </ul>
+        <div class="icons-div">
+
+            <button class="p-2 bg-gray-300 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+            </button>
+
+            <button ng-click="toggleDarkMode()" class="p-2 bg-gray-300 dark:bg-black rounded-full dark-mode-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" ng-if="!isDarkMode" width="18" height="18" fill="currentColor"
+                    class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" ng-if="isDarkMode" width="16" height="16" fill="currentColor"
+                    class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                    <path
+                        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                </svg>
+            </button>
+
+            <button class="p-2 bg-gray-300 dark:bg-black rounded-full" ng-click="toggleHeart()" id="heart_icon_div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" ng-if="heartToggle"
+                    class="bi bi-heart" viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" ng-if="!heartToggle"
+                    class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                </svg>
+            </button>
+    </nav>
+
+    <div class="lang-menu">
+        <div class="selected-lang">
+            <img src="" alt="" id="flag-icon" style="width: 42px; height: 42px; margin: 8px 8px;">
+            <div class="custom-dropdown">
+                <div class="dropdown-selected" onclick="toggleDropdown()">
+                    English <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-options" id="dropdown-options">
+                    <div data-value="en" onclick="selectLanguage(this)" class="langs">English
+                    </div>
+                    <div data-value="fr" onclick="selectLanguage(this)" class="langs">French</div>
+                    <div data-value="es" onclick="selectLanguage(this)" class="langs">Spanish</div>
+                    <div data-value="de" onclick="selectLanguage(this)" class="langs">German</div>
+                    <div data-value="ru" onclick="selectLanguage(this)" class="langs">Russian</div>
+                    <div data-value="ar" onclick="selectLanguage(this)" class="langs">Arabic</div>
+                    <div data-value="it" onclick="selectLanguage(this)" class="langs">Italian</div>
+                    <div data-value="jp" onclick="selectLanguage(this)" class="langs">Japanese</div>
+                    <div data-value="pl" onclick="selectLanguage(this)" class="langs">Polish</div>
+                    <div data-value="pt" onclick="selectLanguage(this)" class="langs">Portuguese</div>
+                    <div data-value="cn" onclick="selectLanguage(this)" class="langs">Chinese</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <section class="hero split hero-section">
+        <div class="hero-text">
+            <h1 class="text1">Step Up Your Style with Foot Flare</h1>
+            <p class="text2">Discover footwear that’s built for your comfort. Whether you're running errands or running a marathon,
+                we’ve got the perfect pair for you.</p>
+            <a href="#" class="btn2 btn hover-filled-slide-up"class="btn1">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="/logos/hero_img.jpg" alt="Footwear Image" draggable="false">
+        </div>
+    </section>
+
+
+
+
+<div class="text-div">
+    <h1 class="bigtext">adgsrf</h1>
+</div>
+<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+    <script src="animations.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.dark-mode nav {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.dark-mode button {
+    background-color: var(--secondary-color);
+    color: #F1F1F1;
+    border: 1px solid var(--accent-color);
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+.dark-mode .btn-dark:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode .btn-dark:active {
+    background-color: var(--active-bg);
+}
+
+.dark-mode .btn-dark:focus {
+    outline: 2px solid var(--focus-outline);
+}
+
+
+.dark-mode .hero-section {
+    background: linear-gradient(45deg, #2A2A2A, var(--dark-text));
+}
+
+.dark-mode .text2{
+    background: var(--dark-text);
+    color: rgb(161, 158, 158);
+}
+
+.dark-mode .dropdown-menu{
+    background: var(--dark-bg);
+    border:  1px solid var(--dark-text);
+}
+
+.dark-mode ul li a{
+    color: var(--link-color);
+}
+
+.dark-mode .dropdown-options{
+    background: linear-gradient(45deg, var(--dark-text), var(--dark-bg));
+    border: 1px solid var(--dark-bg);
+    color: var(--dropdown-bg);
+}
